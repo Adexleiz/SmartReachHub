@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | SmartReach Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, gold, #006400);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      color: #006400;
+      margin: 0;
+    }
+    header p {
+      color: #555;
+      margin-top: 5px;
+    }
+    .ads {
+      background-color: #f9f9f9;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .ads h3 {
+      color: #006400;
+    }
+    .withdrawals {
+      background: white;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      height: 100px;
+      overflow-y: auto;
+    }
+    .withdrawals p {
+      margin: 5px 0;
+      color: #333;
+    }
+    .nav-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+    .nav-buttons button {
+      padding: 15px;
+      background-color: #006400;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .nav-buttons button:hover {
+      background-color: #228B22;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartReach Hub</h1>
+    <p>Your Online Business Partner</p>
+  </header>
+
+<nav style="background-color: #006400; padding: 10px; text-align: center;">
+  <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+  <a href="task.html" style="color: white; margin: 0 15px; text-decoration: none;">Task</a>
+  <a href="vip.html" style="color: white; margin: 0 15px; text-decoration: none;">VIP</a>
+  <a href="profit.html" style="color: white; margin: 0 15px; text-decoration: none;">Profit</a>
+  <a href="myaccount.html" style="color: white; margin: 0 15px; text-decoration: none;">My Account</a>
+  <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact Us</a>
+</nav>
+
+  <div class="ads">
+    <h3>Welcome to SmartReach Hub!</h3>
+    <p>Earn money by completing simple tasks and referring friends. Join any job level (J1 - J9) and start earning today.</p>
+  </div>
+
+  <div class="withdrawals">
+    <h4>Recent Withdrawals</h4>
+    <div id="withdrawals-log"></div>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="location.href='task.html'">Task</button>
+    <button onclick="location.href='vip.html'">VIP</button>
+    <button onclick="location.href='profit.html'">Profit</button>
+    <button onclick="location.href='myaccount.html'">My Account</button>
+    <button onclick="location.href='contact.html'">Contact Us</button>
+    <button onclick="alert('Please join a J Level to start earning!')">Join J Level</button>
+  </div>
+
+  <footer>
+    &copy; 2025 SmartReach Hub | All rights reserved.
+  </footer>
+
+  <script>
+    const withdrawalLog = document.getElementById('withdrawals-log');
+
+    const amounts = [150, 450, 600, 1500, 4000, 12000, 30000, 60000, 150000];
+    const prefixes = ["07", "01"];
+
+    function generateNumber() {
+      const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+      const middle = Math.floor(100 + Math.random() * 900);
+      const end = Math.floor(100 + Math.random() * 900);
+      return `${prefix}*****${end}`;
+    }
+
+    function generateWithdrawal() {
+      const number = generateNumber();
+      const amount = amounts[Math.floor(Math.random() * amounts.length)];
+      const message = `<p>${number} withdrew KES ${amount}</p>`;
+      withdrawalLog.innerHTML = message + withdrawalLog.innerHTML;
+    }
+
+    // Run every 2 minutes (for demo, set it to 10 seconds)
+    generateWithdrawal();
+    setInterval(generateWithdrawal, 10000);
+  </script>
+
+</body>
+</html>

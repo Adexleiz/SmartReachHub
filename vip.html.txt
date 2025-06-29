@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP | SmartReach Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, gold, #006400);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      color: #006400;
+      margin: 0;
+    }
+    header p {
+      color: #555;
+      margin-top: 5px;
+    }
+    .container {
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #006400;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #006400;
+      color: white;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    .join-button {
+      padding: 8px 12px;
+      background-color: #006400;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .join-button:hover {
+      background-color: #228B22;
+    }
+    .payment-box {
+      background-color: #fff8dc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartReach Hub</h1>
+    <p>Your Online Business Partner</p>
+  </header>
+
+<nav style="background-color: #006400; padding: 10px; text-align: center;">
+  <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+  <a href="task.html" style="color: white; margin: 0 15px; text-decoration: none;">Task</a>
+  <a href="vip.html" style="color: white; margin: 0 15px; text-decoration: none;">VIP</a>
+  <a href="profit.html" style="color: white; margin: 0 15px; text-decoration: none;">Profit</a>
+  <a href="myaccount.html" style="color: white; margin: 0 15px; text-decoration: none;">My Account</a>
+  <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact Us</a>
+</nav>
+
+  <div class="container">
+    <h2>Upgrade to VIP Levels</h2>
+
+    <div class="payment-box">
+      <p><strong>Pay via M-PESA Paybill: <span style="color: red;">3695138</span></strong></p>
+      <p>Account Number: Your Phone Number</p>
+      <p>Enter the required amount for your J Level.</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>J Level</th>
+        <th>Amount (KES)</th>
+        <th>Tasks/Day</th>
+        <th>Daily</th>
+        <th>Monthly</th>
+        <th>Annual</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>J1</td><td>1,800</td><td>4</td><td>80</td><td>2,400</td><td>26,400</td>
+        <td><button class="join-button" onclick="joinLevel('J1', 1800)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J2</td><td>3,000</td><td>9</td><td>160</td><td>4,800</td><td>52,800</td>
+        <td><button class="join-button" onclick="joinLevel('J2', 3000)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J3</td><td>4,800</td><td>10</td><td>200</td><td>6,000</td><td>66,000</td>
+        <td><button class="join-button" onclick="joinLevel('J3', 4800)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J4</td><td>8,100</td><td>16</td><td>320</td><td>9,600</td><td>105,600</td>
+        <td><button class="join-button" onclick="joinLevel('J4', 8100)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J5</td><td>12,000</td><td>23</td><td>460</td><td>13,800</td><td>151,800</td>
+        <td><button class="join-button" onclick="joinLevel('J5', 12000)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J6</td><td>25,000</td><td>53</td><td>1,060</td><td>31,800</td><td>349,800</td>
+        <td><button class="join-button" onclick="joinLevel('J6', 25000)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J7</td><td>30,800</td><td>143</td><td>2,860</td><td>85,800</td><td>943,800</td>
+        <td><button class="join-button" onclick="joinLevel('J7', 30800)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J8</td><td>45,850</td><td>210</td><td>4,200</td><td>126,000</td><td>1,386,000</td>
+        <td><button class="join-button" onclick="joinLevel('J8', 45850)">Join</button></td>
+      </tr>
+      <tr>
+        <td>J9</td><td>90,800</td><td>445</td><td>8,900</td><td>267,000</td><td>2,973,000</td>
+        <td><button class="join-button" onclick="joinLevel('J9', 90800)">Join</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    &copy; 2025 SmartReach Hub | All rights reserved.
+  </footer>
+
+  <script>
+    function joinLevel(level, amount) {
+      alert(`To join ${level}, pay KES ${amount} to Paybill 3695138.\nAfter payment, paste your M-PESA confirmation in the 'My Account' page.`);
+    }
+  </script>
+
+</body>
+</html>

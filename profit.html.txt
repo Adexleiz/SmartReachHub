@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profit | SmartReach Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, gold, #006400);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      color: #006400;
+      margin: 0;
+    }
+    header p {
+      color: #555;
+      margin-top: 5px;
+    }
+    .container {
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #006400;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #006400;
+      color: white;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    .referral {
+      background-color: #fff8dc;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .referral p {
+      margin: 8px 0;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #006400;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #228B22;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartReach Hub</h1>
+    <p>Your Online Business Partner</p>
+  </header>
+
+<nav style="background-color: #006400; padding: 10px; text-align: center;">
+  <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+  <a href="task.html" style="color: white; margin: 0 15px; text-decoration: none;">Task</a>
+  <a href="vip.html" style="color: white; margin: 0 15px; text-decoration: none;">VIP</a>
+  <a href="profit.html" style="color: white; margin: 0 15px; text-decoration: none;">Profit</a>
+  <a href="myaccount.html" style="color: white; margin: 0 15px; text-decoration: none;">My Account</a>
+  <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact Us</a>
+</nav>
+
+  <div class="container">
+    <h2>Earnings Breakdown</h2>
+
+    <table>
+      <tr>
+        <th>J Level</th>
+        <th>Amount (KES)</th>
+        <th>Tasks/Day</th>
+        <th>Daily</th>
+        <th>Monthly</th>
+        <th>Annual</th>
+      </tr>
+      <tr><td>J1</td><td>1,800</td><td>4</td><td>80</td><td>2,400</td><td>26,400</td></tr>
+      <tr><td>J2</td><td>3,000</td><td>9</td><td>160</td><td>4,800</td><td>52,800</td></tr>
+      <tr><td>J3</td><td>4,800</td><td>10</td><td>200</td><td>6,000</td><td>66,000</td></tr>
+      <tr><td>J4</td><td>8,100</td><td>16</td><td>320</td><td>9,600</td><td>105,600</td></tr>
+      <tr><td>J5</td><td>12,000</td><td>23</td><td>460</td><td>13,800</td><td>151,800</td></tr>
+      <tr><td>J6</td><td>25,000</td><td>53</td><td>1,060</td><td>31,800</td><td>349,800</td></tr>
+      <tr><td>J7</td><td>30,800</td><td>143</td><td>2,860</td><td>85,800</td><td>943,800</td></tr>
+      <tr><td>J8</td><td>45,850</td><td>210</td><td>4,200</td><td>126,000</td><td>1,386,000</td></tr>
+      <tr><td>J9</td><td>90,800</td><td>445</td><td>8,900</td><td>267,000</td><td>2,973,000</td></tr>
+    </table>
+
+    <div class="referral">
+      <h3>Referral Earnings</h3>
+      <p>Referral Earnings based on your J Level:</p>
+      <ul>
+        <li>J1: KES 200 per referral</li>
+        <li>J2: KES 350 per referral</li>
+        <li>J3: KES 500 per referral</li>
+        <li>J4: KES 650 per referral</li>
+        <li>J5: KES 750 per referral</li>
+        <li>J6: KES 850 per referral</li>
+        <li>J7: KES 1,500 per referral</li>
+        <li>J8: KES 3,000 per referral</li>
+        <li>J9: KES 5,000 per referral</li>
+      </ul>
+      <p><strong>Your Referral Link:</strong></p>
+      <input type="text" id="refLink" value="https://smartreachhub.com/register?ref=YourUsername" readonly>
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SmartReach Hub | All rights reserved.
+  </footer>
+
+  <script>
+    function copyLink() {
+      const copyText = document.getElementById("refLink");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); 
+      document.execCommand("copy");
+      alert("Referral Link Copied: " + copyText.value);
+    }
+  </script>
+
+</body>
+</html>

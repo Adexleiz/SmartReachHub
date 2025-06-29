@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | SmartReach Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #006400, gold);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      background: white;
+      margin: 80px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    h2 {
+      text-align: center;
+      color: #006400;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #006400;
+      border-radius: 8px;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #006400;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #228B22;
+    }
+    .bottom-text {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .bottom-text a {
+      color: #006400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>SmartReach Hub<br><small>Your Online Business Partner</small></h2>
+    <form>
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="bottom-text">
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
